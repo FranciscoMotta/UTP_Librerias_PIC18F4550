@@ -56,7 +56,7 @@ void CCP1_PWM_Set_Duty_Cycle(uint8_t percent)
         CCP1CONbits.CCP1M2 = 0;
         CCP1CONbits.CCP1M3 = 0;   
         LATCbits.LATC2 = 0;
-        CCPR2L = pwm_period - 1;
+        CCPR1L = pwm_period - 1;
     }
     else
     {
